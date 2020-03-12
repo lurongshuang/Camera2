@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/llview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".VideoActivity">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@android:color/black">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="视频播放"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/tvtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="学习之前，请先进行身份验证。"
+                android:textColor="@color/color_red"
+                android:textSize="24sp" />
+
+        <Button
+                android:id="@+id/btget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="进行身份验证" />
+
+    </LinearLayout>
+</ScrollView>

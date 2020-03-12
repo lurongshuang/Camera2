@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:context=".camera.CameraActivity">
+
+    <ImageView
+            android:id="@+id/ivclose"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="20dp"
+            android:src="@mipmap/close" />
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+        <com.lrs.camera2.RoundTextureView
+                android:id="@+id/texture_preview"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="请将脸移至圈内"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="识别到人脸："
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+    <ImageView
+            android:id="@+id/ivimage"
+            android:rotation="270"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+</LinearLayout>
